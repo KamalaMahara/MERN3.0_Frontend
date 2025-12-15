@@ -1,0 +1,12 @@
+@import "tailwindcss";
+/* In index.css or global.css */
+body {
+  background-color: black;
+  color: white; /* Sets the default text color for the entire page */
+  min-height: 100vh; /* Ensures the background covers the entire viewport */
+}
+
+/* You might also want to set the root element (usually #root or #app) */
+#root {
+  min-height: 100vh;
+}
