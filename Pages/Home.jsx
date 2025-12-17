@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Cards from '../components/Cards'
+import axios from 'axios'
 
 const Home = () => {
+  const fetchBlogs = async () => {
+    const response = await axios.get("http://localhost:3000/blog")
+  }
+  useEffect(() => {
+    fetchBlogs();
+  }, [])
   const cards = [
     {
       title: "The AI Gender Gap: Data Bias in Code",
@@ -30,7 +37,7 @@ const Home = () => {
       img: "https://www.isss.org.uk/wp-content/uploads/2025/01/caigo-1.jpg"
     },
     {
-      title: "Tech's Trojan Horse: Surveillance & Rights",
+      title: "Tech's Trojan Horses: Surveillance & Rights",
       description: "Exploring the risk to women's and human rights when government agencies use data collected by mass surveillance IT.",
       img: "https://www.csoonline.com/wp-content/uploads/2023/06/trojan-horse_malware_virus_binary_by-v-graphix-getty-100799531-orig.jpg?quality=50&strip=all"
     }
