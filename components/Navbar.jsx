@@ -12,7 +12,7 @@ const Navbar = () => {
           <img src="/logor.png" alt="My Company Logo" className="w-12  min-h-12" />
         </a>
         <div className="hidden md:flex items-center gap-6 ml-7">
-          <a href="#" className="relative overflow-hidden h-6 group">
+          <a href="/" className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">Home</span>
             <span
               className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">Home</span>
@@ -22,7 +22,7 @@ const Navbar = () => {
             <span
               className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">Blogs</span>
           </a>
-          <a href="#" className="relative overflow-hidden h-6 group">
+          <a href="/create" className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">Create</span>
             <span
               className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">Create</span>
