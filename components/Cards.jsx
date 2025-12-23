@@ -7,7 +7,7 @@ const Cards = ({ blog }) => {
       <div className="bg-neutral-primary-soft p-6 border border-default hover:border-green-400 rounded-lg shadow-xs">
         <img
           className="rounded-base w-full h-50"
-          src={`http://localhost:3000/${blog.image}`}
+          src={`${blog.image}`}
           alt={blog.title}
         />
         <h5 className="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">

@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar'
-import Cards from '../components/Cards'
-import axios from 'axios'
+// src/Pages/Home.jsx
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([])
-  const fetchBlogs = async () => {
-    const response = await axios.get("http://localhost:3000/blog")
-    setBlogs(response.data.data)
-  }
-  useEffect(() => {
-    fetchBlogs();
-  }, [])
-
   return (
     <>
       <Navbar />
-      <div className='flex  flex-wrap gap-8 justify-center mt-20 mb-14'>
-        {blogs.map((blog, index) => {
-          return <Cards key={index} blog={blog} />
-        })}
-      </div>
-    </>
-  )
-}
 
-export default Home
+      <section className="mt-20 text-center">
+        <h1 className="text-4xl font-bold">Welcome to My Blog Platform</h1>
+        <p className="mt-4 text-lg text-gray-600">
+          Read amazing blogs or create your own.
+        </p>
+
+        <a
+          href="/blogs"
+          className="mt-8 inline-block bg-green-600 text-white px-6 py-3 rounded-full"
+        >
+          View Blogs
+        </a>
+      </section>
+    </>
+  );
+};
+
+export default Home;

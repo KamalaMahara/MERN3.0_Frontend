@@ -17,6 +17,7 @@ const SingleBlog = () => {
   useEffect(() => {
     fetchSingleBlog();
   }, [])
+
   const deleteBlog = async () => {
     const response = await axios.delete(`http://localhost:3000/blog/${_id}`)
     console.log(response.status);
@@ -33,12 +34,23 @@ const SingleBlog = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 dark:bg-gray-800 py-8 mt-10">
+      <div className="bg-gray-100 dark:bg-gray-800 py-8 m-10 rounded-lg shadow">
+        <div className="flex justify-end gap-2 mb-4 mx-8">
+          <a href="/"
+            className="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-indigo-500 hover:bg-blue-600 hover:text-white ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">
+              </path>
+            </svg>
+            <span className="ml-1 font-bold text-lg">Back</span>
+          </a>
+
+        </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row -mx-4">
             <div className="md:flex-1 px-4">
               <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                <img className="w-full h-full object-cover" src={`http://localhost:3000/${blog.image}`} />
+                <img className="w-full h-full object-cover" src={`${blog.image}`} />
               </div>
               <div className="flex -mx-2 mb-4">
                 <div className="w-1/2 px-2">
