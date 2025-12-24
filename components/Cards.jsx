@@ -13,7 +13,7 @@ const Cards = ({ blog }) => {
         <h5 className="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">
           {blog.title}
         </h5>
-        <p className="mb-6 text-body">{blog.description}</p>
+        <p className="mb-6 text-body">{blog.subtitle}</p>
         <span className="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium rounded-sm hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
           Read more
           <svg

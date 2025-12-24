@@ -23,7 +23,7 @@ const SingleBlog = () => {
     console.log(response.status);
     if (response.status === 200) {
       alert("Blog Deleted Successfully");
-      navigate("/");
+      navigate("/blogs");
 
     }
     else {
@@ -36,7 +36,7 @@ const SingleBlog = () => {
       <Navbar />
       <div className="bg-gray-100 dark:bg-gray-800 py-8 m-10 rounded-lg shadow">
         <div className="flex justify-end gap-2 mb-4 mx-8">
-          <a href="/"
+          <a href="/blogs"
             className="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-indigo-500 hover:bg-blue-600 hover:text-white ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">

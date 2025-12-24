@@ -70,7 +70,7 @@ const CreateBlog = () => {
       }
     })
     if (response.status === 200) {
-      navigate("/");
+      navigate("/blogs");
     }
     else {
       alert(" something went wrong");

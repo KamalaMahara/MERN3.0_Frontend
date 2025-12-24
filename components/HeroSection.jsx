@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen bg-[#020617] overflow-hidden flex items-center mt-8">
+    <div className="relative min-h-screen bg-[#020617] overflow-hidden flex items-center ">
 
       {/* Background Glow Orbs */}
       <div className="absolute top-0 -left-20 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px]" />
