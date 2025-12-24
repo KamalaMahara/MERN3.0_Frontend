@@ -64,7 +64,7 @@ const CreateBlog = () => {
       return;
     }
 
-    const response = await axios.post("http://localhost:3000/blog", data, {
+    const response = await axios.post("https://mern3-0-backend-blog.onrender.com/blog", data, {
       headers: {
         "Content-Type": "multipart/form-data"
       }
