@@ -7,10 +7,10 @@ const Navbar = () => {
       <nav className="flex h-18  justify-evenly gap-4  items-center border border-slate-700 px-10 py-2 rounded-full text-white text-md max-md:w-full  max-md:justify-between max-w-2xl mx-auto mt-2 hover:border-blue-800 bordder  ">
 
         <a href="/home">
-          <img src="/logor.png" alt="My Company Logo" className="h-18 w-auto object-contain" />
+          <img src="/logoE.PNG" alt="My Company Logo" className="h-18 w-auto object-contain" />
         </a>
 
-        <span className="text-3xl font-extrabold text-white leading-tight">Aura</span>
+        <span className="text-3xl font-extrabold text-white leading-tight">Bloom</span>
         <div className="hidden md:flex items-center gap-8 ml-7">
           <a href="/" className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">Home</span>

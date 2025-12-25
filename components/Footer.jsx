@@ -35,10 +35,10 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="h-18 w-18 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
                 <a href="/home">
-                  <img src="/logor.png" alt="My Company Logo" className="h-18 w-auto object-contain" />
+                  <img src="/logoE.PNG" alt="My Company Logo" className="h-18 w-auto object-contain" />
                 </a>
               </div>
-              <span className="text-2xl font-extrabold text-white leading-tight">Aura</span>
+              <span className="text-2xl font-extrabold text-white leading-tight">Bloom</span>
             </div>
             <p className="text-slate-400 leading-relaxed mb-8 max-w-sm">
               The world's most intuitive CRUD management platform for modern content creators. Built with speed and security at its core.
