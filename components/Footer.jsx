@@ -62,7 +62,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li><a href="https://linkedin.com/in/kmla-mahara" className="hover:text-indigo-400 transition-colors">Linkedin</a></li>
               <li><a href="#" className="hover:text-indigo-400 transition-colors">Facebook</a></li>
-              <li><a href="#" className="hover:text-indigo-400 transition-colors">Instagram</a></li>
+              <li><a href="https://www.instagram.com/semicolon_9999/" className="hover:text-indigo-400 transition-colors">Instagram</a></li>
 
             </ul>
           </div>
