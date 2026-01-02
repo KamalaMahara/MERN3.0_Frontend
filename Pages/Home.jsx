@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection";
 import FeatureSection from "../components/FeatureSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import CreateBlog from "./CreateBlog";
+
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
         <Navbar />
         <HeroSection />
         <FeatureSection />
-        <CreateBlog />
+
         <Contact />
         <Footer />
       </div>

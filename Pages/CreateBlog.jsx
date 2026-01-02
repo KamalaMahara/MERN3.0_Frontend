@@ -109,7 +109,7 @@ const CreateBlog = () => {
               </div>
             </div>
 
-            <label for="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-4">Upload Files *</label>
+            <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-4">Upload Files *</label>
             <div className="flex items-center justify-center w-full">
 
               <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-64 bg-neutral-secondary-medium   border  rounded-lg cursor-pointer hover:bg-neutral-tertiary-medium ">
@@ -144,4 +144,4 @@ const CreateBlog = () => {
   )
 }
 
-export default CreateBlog
+export default CreateBlog;
